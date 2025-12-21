@@ -2,11 +2,65 @@
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import Link from "../components/Link.astro";
+import Title from "../components/Title.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro"
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Link />
+	<body>
+		<header>
+			<Header />
+		</header>
+		<div>
+			<div class="empty-l"></div>
+			<div class="main">
+				<!-- <Title /> -->
+				<Link />
+			</div>
+			<div class="empty-r"></div>
+		</div>
+		<footer>
+			<Footer>
+		</footer>
+	</body>
 </Layout>
+
+<style>
+	/* TODO: Fix global font and local fonts */
+	/* @font-face {
+		font-family: "Inter";
+		src: local("Inter"), url(/fonts/Inter/Inter-VariableFont_opsz,wght.ttf) format("ttf");
+	} */
+	@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    body {
+		display: grid;
+		grid-template: auto 1fr auto / auto 1fr auto;
+	}
+
+	header {
+		/* padding: 2rem; */
+		grid-column: 1 / 4;
+	}
+
+	.empty-l {
+		grid-column: 1 / 2;
+	}
+
+	.main {
+		grid-column: 2 / 3;
+	}
+
+	.empty-r {
+		grid-column: 3 / 4;
+	}
+
+	footer {
+		grid-column: 1 / 4;
+	}
+
+</style>

@@ -16,33 +16,32 @@ const { name, link, icon } = Astro.props;
         --red-second: #941320;
     }
     .svgs{
-
+        width: 1.5rem;
     }
     .titles{
 
     }
     .buttons{
         font-family: "Inter", sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         cursor: pointer;
         display: flex;
         align-items: center;
         appearance: none;
         background-image: radial-gradient(100% 100% at 100% 0, var(--light-red) 0, var(--red) 100%);
         border: 0;
-        border-radius: 6px;
-        box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+        gap: 0.5rem;
+        border-radius: 0.5rem;
+        box-shadow: rgba(45, 35, 66, .4) 0 0.00625rem 1.5rem,rgba(45, 35, 66, .3) 0 0.4rem 0.8rem -0.2rem,rgba(58, 65, 111, .5) 0 -0.2rem 0 inset;
         box-sizing: border-box;
         color: #fff;
         cursor: pointer;
         display: inline-flex;
-        height: 48px;
         justify-content: center;
         line-height: 1;
         list-style: none;
         overflow: hidden;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding: 1rem 1.5rem;
         position: relative;
         text-align: left;
         text-decoration: none;
@@ -52,20 +51,20 @@ const { name, link, icon } = Astro.props;
         touch-action: manipulation;
         white-space: nowrap;
         will-change: box-shadow,transform;
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     .buttons:focus {
-        box-shadow: var(--red-second)  0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, var(--red-second)  0 -3px 0 inset;
+        box-shadow: var(--red-second)  0 0 0 0.1rem inset, rgba(45, 35, 66, .4) 0 0.1rem 0.25rem, rgba(45, 35, 66, .3) 0 0.4rem 0.8rem -0.2remx, var(--red-second)  0 -0.2rem 0 inset;
     }
 
     .buttons:hover {
-        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, var(--red-second)  0 -3px 0 inset;
-        transform: translateY(-2px);
+        box-shadow: rgba(45, 35, 66, .4) 0 0.25rem 0.5rem, rgba(45, 35, 66, .3) 0 0.1rem 0.25rem, var(--red-second)  0 -0.2rem 0 inset;
+        transform: translateY(-0.1rem);
     }
 
     .buttons:active {
-        box-shadow: var(--red-second) 0 3px 7px inset;
-        transform: translateY(2px);
+        box-shadow: var(--red-second) 0 -0.2rem 0.5rem inset;
+        transform: translateY(0.1rem);
     }
 </style>

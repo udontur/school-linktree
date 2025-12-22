@@ -2,15 +2,16 @@
 import { Image } from 'astro:assets';
 ---
 <div id="container">
-    <!-- REM FIX -->
+    <!-- REM FIX 8 -->
     <Image
         src="/images/dsc.svg",
         alt="dsc logo",
-        width="96",
-        height="96"
+        width="128",
+        height="128"
     />
     <div class="schoolName">
-        <div class="nice">DSC</div> Linktree
+        <div id="dsc">DSC</div>
+        <div id="linktree"><div class="italic">Link</div>tree</div>
     </div>
 </div>
 
@@ -20,18 +21,27 @@ import { Image } from 'astro:assets';
         display: flex;
         /* border:solid; */
         align-items: center;
+        gap: 0.75rem;
     }
     .logo{
         /* width: 6rem; */
         /* border:solid; */
     }
     .schoolName{
-        line-height: 1.5rem;
+        line-height: 1.7rem;
         font-size: 2rem;
         /* display: flex; */
     }
-    .nice{
+    #dsc{
         font-weight: 700;
         letter-spacing: -0.2rem !important;
+    }
+    #linktree{
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        display: flex;
+    }
+    .italic{
+        font-style: italic;
     }
 </style>

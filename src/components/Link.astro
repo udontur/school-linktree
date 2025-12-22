@@ -1,9 +1,21 @@
 ---
 import LinkButton from "./LinkButton.astro";
+import linkData from "../data/links.json";
 ---
 
 <div id="container">
-    <LinkButton
+    {
+        linkData.map((linkData)=>{
+            return (
+                <LinkButton
+                    name={linkData.name},
+                    link={linkData.link},
+                    icon={linkData.icon}
+                />
+            );
+        })
+    }
+    <!-- <LinkButton
         name="DSC ParentPortal",
         link="https://dsc.edu.hk/parent-portal",
         icon="portal.svg"
@@ -27,7 +39,7 @@ import LinkButton from "./LinkButton.astro";
         name="Google Classroom Home",
         link="https://classroom.google.com/h",
         icon="home.svg"
-    />
+    /> -->
 </div>
 
 <!-- CSS STYLE -->

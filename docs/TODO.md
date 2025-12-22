@@ -9,6 +9,7 @@
 - [ ] feat: add source code and made by me in footer
 - [x] feat: nice white gradient background
 - [ ] feat: animejs the "linktree" word in the header
+- [ ] feat: astro config file that can build stuff
 
 - [ ] chore: run core web vitals
 - [ ] chore: make sure it is mobile friendly

@@ -1,11 +1,11 @@
 [
     {
-        "name": "DSC ParentPortal",
+        "name": "DSC Parent Portal",
         "link": "https://dsc.edu.hk/parent-portal",
         "icon": "portal.svg"
     },
     {
-        "name": "Edsembli Student/Parents",
+        "name": "Edsembli Student / Parents",
         "link": "https://connect.edsembli.com/ON/Private/DSC/DSCS/Portal/viewer/login/login.aspx?LoginType=P",
         "icon": "marks.svg"
     },
@@ -25,7 +25,7 @@
         "icon": "home.svg"
     },
     {
-        "name": "Printer web submit protal",
+        "name": "Printer Web Submit Protal",
         "link": "http://fxa6th/websubmit/Default.aspx?action=logout",
         "icon": "printer.svg"
     }

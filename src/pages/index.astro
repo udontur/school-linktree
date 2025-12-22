@@ -15,14 +15,12 @@ import Header from "../components/Header.astro"
 		<header>
 			<Header />
 		</header>
-		<div>
-			<div class="empty-l"></div>
-			<div class="main">
-				<Title />
-				<Link />
-			</div>
-			<div class="empty-r"></div>
-		</div>
+		<div class="empty"></div>
+		<main>
+			<Title />
+			<Link />
+		</main>
+		<div class="empty"></div>
 		<footer>
 			<Footer>
 		</footer>
@@ -30,14 +28,15 @@ import Header from "../components/Header.astro"
 </Layout>
 
 <style>
-	/* TODO: Fix global font and local fonts */
 	/* @font-face {
 		font-family: "Inter";
 		src: local("Inter"), url(/fonts/Inter/Inter-VariableFont_opsz,wght.ttf) format("ttf");
 	} */
+
+	/* TODO: Migrate to local font */
 	@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 	@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-	
+
 	#background{
 		position: fixed;
 		top: 0;
@@ -48,35 +47,26 @@ import Header from "../components/Header.astro"
 		filter: blur(100px);
 	}
 
-
-    body {
+	body{
 		display: grid;
-		background-color: rgb(255, 251, 240);
-		grid-template: auto 1fr auto / auto 1fr auto;
+		grid-template-columns: 1fr minmax(300px, 1164px) 1fr;
+		grid-template-rows: auto 1fr auto;
+		margin: 0px;
 	}
-
-	header {
-		/* padding: 2rem; */
-		grid-column: 1 / 4;
+	header{
+		grid-column: span 3;
+		grid-row: 1;
 	}
-
-	.empty-l {
-		grid-column: 1 / 2;
+	.empty{
+		grid-column: span 1;
+		grid-row: 2;
 	}
-
-	.main {
-		grid-column: 2 / 3;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	main{
+		grid-column: span 1;
+		grid-row: 2;
 	}
-
-	.empty-r {
-		grid-column: 3 / 4;
+	footer{
+		grid-column: span 3;
+		grid-row: 3;
 	}
-
-	footer {
-		grid-column: 1 / 4;
-	}
-
 </style>

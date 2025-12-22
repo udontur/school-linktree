@@ -1,4 +1,5 @@
 - [ ] fix: load font from public folder
+- [ ] fix: use the prefered way to serve images
 - [ ] fix: holy grails layout
 
 - [ ] feat: add heading image and words

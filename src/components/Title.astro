@@ -1,7 +1,14 @@
 ---
+import { Image } from 'astro:assets';
 ---
 <div id="container">
-    <img class="logo" src="/hybrids/dsc.svg" alt="dsc logo" fetchpriority="high">
+    <!-- REM FIX -->
+    <Image
+        src="/images/dsc.svg",
+        alt="dsc logo",
+        width="96",
+        height="96"
+    />
     <div class="schoolName">
         <div class="nice">DSC</div> Linktree
     </div>
@@ -13,7 +20,7 @@
         align-items: center;
     }
     .logo{
-        width: 6rem;
+        /* width: 6rem; */
         /* border:solid; */
     }
     .schoolName{

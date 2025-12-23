@@ -12,7 +12,7 @@
 - [ ] feat: make svgs use the image tag
 - [x] feat: nice white gradient background
 - [ ] feat: animejs the "linktree" word in the header
-- [ ] feat: astro config file that can build stuff locally
+- [x] feat: astro config file that can build stuff locally
 
 - [ ] chore: run core web vitals and fix stuff
 - [x] chore: make sure it is mobile friendly

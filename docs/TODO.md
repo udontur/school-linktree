@@ -1,7 +1,7 @@
 - [x] fix: load font from public folder
 - [x] fix: use the prefered way to serve images
 - [x] fix: holy grails layout
-- [ ] fix: make image tag resizable in rems
+- [x] fix: make image tag resizable in rems
 - [x] fix: bun build not working
 
 - [x] feat: add heading image and words
@@ -11,7 +11,6 @@
 - [x] feat: style footer, make a light grey text and nice margin
 - [ ] feat: make svgs use the image tag
 - [x] feat: nice white gradient background
-- [ ] feat: animejs the "linktree" word in the header
 - [x] feat: astro config file that can build stuff locally
 
 - [ ] chore: run core web vitals and fix stuff

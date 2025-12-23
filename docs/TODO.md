@@ -1,6 +1,6 @@
-- [ ] fix: load font from public folder
+- [x] fix: load font from public folder
 - [x] fix: use the prefered way to serve images
-- [ ] fix: holy grails layout
+- [x] fix: holy grails layout
 
 - [x] feat: add heading image and words
 - [x] feat: style heading
@@ -9,7 +9,7 @@
 - [ ] feat: add source code and made by me in footer
 - [x] feat: nice white gradient background
 - [ ] feat: animejs the "linktree" word in the header
-- [ ] feat: astro config file that can build stuff
+- [ ] feat: astro config file that can build stuff locally
 
 - [ ] chore: run core web vitals
 - [ ] chore: make sure it is mobile friendly

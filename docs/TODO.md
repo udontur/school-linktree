@@ -6,7 +6,7 @@
 
 - [x] feat: add heading image and words
 - [x] feat: style heading
-- [ ] feat: add build number to footer
+- [x] feat: add build number to footer
 - [x] feat: add source code and made by me in footer
 - [x] feat: style footer, make a light grey text and nice margin
 - [ ] feat: make svgs use the image tag

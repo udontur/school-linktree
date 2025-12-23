@@ -1,14 +1,14 @@
 ---
-// In Vercel
+// In Vercel, framework dependent
 let buildNumber = "UNKOWN";
 let envBuildNumber = import.meta.env.PUBLIC_VERCEL_GIT_COMMIT_SHA;
 if(import.meta.env.PROD){
-    buildNumber=envBuildNumber.slice(0, 8);
+    buildNumber=envBuildNumber.slice(0, 7);
 }
 ---
 
 <div class="container">
-    Build <a href={"https://github.com/udontur/school-linktree/tree/"+buildNumber}>{buildNumber}</a>
+    Build <a href={"https://github.com/udontur/school-linktree/tree/"+envBuildNumber}>{buildNumber}</a>
     made with passion by <a href="https://hadrian.cc">Hadrian</a>.
 </div>
 

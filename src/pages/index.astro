@@ -4,9 +4,6 @@ import Link from "../components/Link/Link.astro";
 import Title from "../components/Title.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro"
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
@@ -59,28 +56,7 @@ import Header from "../components/Header.astro"
 	footer{
 		grid-column: span 3;
 		grid-row: 3;
-	}
-</style>
-
-<style is:global>
-	@font-face {
-		font-family: "Inter";
-		src: url("/fonts/Inter/Inter-Regular.woff2") format("woff2");
-		font-style: normal;
-		font-display: swap;
-	}
-	@font-face {
-		font-family: "Playfair Display";
-		src: url("/fonts/PlayfairDisplay/PlayfairDisplay-Regular-Normal.woff") format("woff");
-		font-weight: normal;
-		font-style: normal;
-		font-display: swap;
-	}
-	@font-face {
-		font-family: "Playfair Display";
-		src: url("/fonts/PlayfairDisplay/PlayfairDisplay-Italic-Normal.woff") format("woff");
-		font-weight: normal;
-		font-style: italic;
-		font-display: swap;
+		display: flex;
+		justify-content: center;
 	}
 </style>

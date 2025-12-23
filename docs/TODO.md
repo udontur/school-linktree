@@ -2,6 +2,7 @@
 - [x] fix: use the prefered way to serve images
 - [x] fix: holy grails layout
 - [ ] fix: make image tag resizable in rems
+- [x] fix: bun build not working
 
 - [x] feat: add heading image and words
 - [x] feat: style heading

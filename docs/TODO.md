@@ -9,7 +9,7 @@
 - [x] feat: add build number to footer
 - [x] feat: add source code and made by me in footer
 - [x] feat: style footer, make a light grey text and nice margin
-- [ ] feat: make svgs use the image tag
+- [x] feat: make svgs use the image tag
 - [x] feat: nice white gradient background
 - [x] feat: astro config file that can build stuff locally
 

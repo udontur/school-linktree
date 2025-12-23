@@ -13,7 +13,7 @@
 - [x] feat: nice white gradient background
 - [x] feat: astro config file that can build stuff locally
 
-- [ ] chore: run core web vitals and fix stuff
+- [x] chore: run core web vitals and fix stuff
 - [x] chore: make sure it is mobile friendly
-- [ ] chore: add a license
-- [ ] chore: a better readme, hackatime badge, and build number
+- [x] chore: add a license
+- [x] chore: a better readme, hackatime badge, and build number

@@ -1,23 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Link from "../components/Link/Link.astro";
-import Title from "../components/Title.astro";
+import Main from '../layouts/Main.astro';
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro"
 ---
 
 <Layout>
 	<img id="background" src="/background.svg" alt="" fetchpriority="high" />
-	<body>
+	<body class="min-h-screen flex flex-col">
 		<header>
 			<Header />
 		</header>
-		<div class="empty"></div>
-		<main>
-			<Title />
-			<Link />
-		</main>
-		<div class="empty"></div>
+		<div class="flex-1 flex flex-col sm:flex-row">
+			<main class="flex-1">
+				<Main/>
+			</main>
+			<div class="sm:w-32 order-first"></div>
+			<div class="sm:w-32"></div>
+		</div>
 		<footer>
 			<Footer>
 		</footer>
@@ -33,30 +33,5 @@ import Header from "../components/Header.astro"
 		height: 100%;
 		z-index: -1;
 		filter: blur(100px);
-	}
-
-	body{
-		display: grid;
-		grid-template-columns: 1fr minmax(300px, 1164px) 1fr;
-		grid-template-rows: auto 1fr auto;
-		margin: 0.5rem;
-	}
-	header{
-		grid-column: span 3;
-		grid-row: 1;
-	}
-	.empty{
-		grid-column: span 1;
-		grid-row: 2;
-	}
-	main{
-		grid-column: span 1;
-		grid-row: 2;
-	}
-	footer{
-		grid-column: span 3;
-		grid-row: 3;
-		display: flex;
-		justify-content: center;
 	}
 </style>

@@ -2,88 +2,31 @@
 const { name, link, icon } = Astro.props;
 import { Image } from "astro:assets";
 ---
-<div id="container">
-    <a href={link} class="links">
-        <button class="buttons">
+
+<div class="flex justify-center items-center w-full">
+    <a class="cursor-pointer w-full max-w-128" href={link}>
+        <button class="
+            rounded-xl
+            border-none
+            bg-linear-to-bl from-light to-main
+            shadow-md shadow-neutral-500/50
+            hover:shadow-lg
+            flex justify-center items-center w-full
+            pt-6 pb-6
+            text-2xl
+            gap-3
+            text-white
+            font-medium
+            hover:-translate-y-0.5
+            cursor-pointer
+        ">
             <Image
                 src={'/icons/'+icon},
                 alt={name}
                 width="36",
                 height="36"
             />
-            <div class="titles">{name}</div>
+            <div>{name}</div>
         </button>
     </a>
 </div>
-
-<!-- CSS STYLE -->
-<style>
-    .links{
-        --light-red: rgb(253, 209, 165);
-        --red: #DA2034;
-        --red-second: #941320;
-        width: min(20rem, 100%);
-    }
-    @media (max-width: 500px){
-        img{
-            width: 1.5rem;
-            height: 1.5rem;
-        }
-    }
-    .titles{
-
-    }
-    #container{
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
-    .buttons{
-        font-family: "Inter", sans-serif;
-        font-weight: 500;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        appearance: none;
-        background-image: radial-gradient(100% 100% at 100% 0, var(--light-red) 0, var(--red) 100%);
-        border: 0;
-        gap: 0.5rem;
-        width: 100%;
-        border-radius: 0.5rem;
-        box-shadow: rgba(45, 35, 66, .4) 0 0.00625rem 1.5rem,rgba(45, 35, 66, .3) 0 0.4rem 0.8rem -0.2rem,rgba(58, 65, 111, .5) 0 -0.2rem 0 inset;
-        box-sizing: border-box;
-        color: #fff;
-        cursor: pointer;
-        display: inline-flex;
-        justify-content: center;
-        line-height: 1;
-        list-style: none;
-        overflow: hidden;
-        padding: 1rem 1.5rem;
-        position: relative;
-        text-align: left;
-        text-decoration: none;
-        transition: box-shadow .15s,transform .15s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        white-space: nowrap;
-        will-change: box-shadow,transform;
-        font-size: 1rem;
-    }
-
-    .buttons:focus {
-        box-shadow: var(--red-second)  0 0 0 0.1rem inset, rgba(45, 35, 66, .4) 0 0.1rem 0.25rem, rgba(45, 35, 66, .3) 0 0.4rem 0.8rem -0.2remx, var(--red-second)  0 -0.2rem 0 inset;
-    }
-
-    .buttons:hover {
-        box-shadow: rgba(45, 35, 66, .4) 0 0.25rem 0.5rem, rgba(45, 35, 66, .3) 0 0.1rem 0.25rem, var(--red-second)  0 -0.2rem 0 inset;
-        transform: translateY(-0.1rem);
-    }
-
-    .buttons:active {
-        box-shadow: var(--red-second) 0 -0.2rem 0.5rem inset;
-        transform: translateY(0.1rem);
-    }
-</style>

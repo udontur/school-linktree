@@ -9,7 +9,7 @@ Here is the link to the deployed website: [DSC Link Tree](https://dsc.hadrian.cc
 ## Why?
 I made it because
 - I need a nice looking school linktree
-- For learning Astro
+- For learning Astro & Tailwind
 - For learning web dev
 
 ## Where is my link?

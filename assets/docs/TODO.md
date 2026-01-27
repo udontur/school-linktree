@@ -1,3 +1,7 @@
+- [ ] feat: change to tailwind css
+- [ ] feat: responsive design
+- [ ] feat: Image tag is optimized and has variable width and height
+
 - [x] fix: load font from public folder
 - [x] fix: use the prefered way to serve images
 - [x] fix: holy grails layout

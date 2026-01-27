@@ -1,48 +1,16 @@
 ---
 import { Image } from 'astro:assets';
 ---
-<div id="container">
+
+<div class="flex items-center justify-center gap-4">
     <Image
         src="/images/dsc.svg",
         alt="dsc logo",
         width="128",
         height="128"
     />
-    <div class="schoolName">
-        <div id="dsc">DSC</div>
-        <div id="linktree"><div class="italic">Link</div>tree</div>
+    <div class="text-5xl leading-10">
+        <div class="font-bold tracking-[-0.3rem]">DSC</div>
+        <div class="flex font-normal font-serif"><div class="italic">Link</div>tree</div>
     </div>
 </div>
-
-<!-- CSS STYLE -->
-<style>
-    #container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.75rem;
-    }
-    @media (max-width: 500px){
-        img{
-            width: 5rem;
-            height: 5rem;
-        }
-    }
-
-    .schoolName{
-        line-height: 1.7rem;
-        font-size: 2rem;
-    }
-    #dsc{
-        font-weight: 700;
-        letter-spacing: -0.2rem !important;
-    }
-    #linktree{
-        font-family: "Playfair Display", serif;
-        font-weight: 400;
-        display: flex;
-    }
-    .italic{
-        font-style: italic;
-    }
-</style>

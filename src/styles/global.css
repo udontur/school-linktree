@@ -4,13 +4,13 @@
     --color-invis: #c8c8c8;
     --color-hover: #787878;
     --font-serif: "Playfair Display", serif;
+    --font-display: "Inter";
     --color-light: #fdd1a5;
     --color-main: #da2034;
 }
 
 * {
     transition: all 0.15s ease-in-out;
-    font-family: "Inter", sans-serif;
 }
 
 @font-face {

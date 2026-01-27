@@ -1,4 +1,4 @@
-- [ ] feat: change to tailwind css
+- [x] feat: change to tailwind css
 - [ ] feat: responsive design
 - [ ] feat: Image tag is optimized and has variable width and height
 

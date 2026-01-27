@@ -6,7 +6,7 @@ import Header from "../components/Header.astro"
 ---
 
 <Layout>
-	<img id="background" src="/background.svg" alt="" fetchpriority="high" />
+	<img class="fixed top-[0] left-[0] w-full h-full blur-3xl z-[-1]" src="/background.svg" alt="background" fetchpriority="high" />
 	<body class="min-h-screen flex flex-col">
 		<header>
 			<Header />
@@ -23,15 +23,3 @@ import Header from "../components/Header.astro"
 		</footer>
 	</body>
 </Layout>
-
-<style>
-	#background{
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		filter: blur(100px);
-	}
-</style>

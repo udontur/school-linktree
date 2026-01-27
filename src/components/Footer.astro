@@ -7,24 +7,14 @@ if(import.meta.env.PROD){
 }
 ---
 
-<div class="container">
-    Build <a href={"https://github.com/udontur/school-linktree/tree/"+envBuildNumber}>{buildNumber}</a>
-    made with passion by <a href="https://hadrian.cc">Hadrian</a>.
+<div class="mt-12 mb-4 text-[0.5rem] text-invis cursor-default hover:text-hover">
+    Build
+    <a class="text-inherit" href={"https://github.com/udontur/school-linktree/tree/"+envBuildNumber}>
+        {buildNumber}
+    </a>
+    made with passion by
+    <a href="https://hadrian.cc">
+        Hadrian
+    </a>
+    .
 </div>
-
-<style>
-    .container{
-        margin: 3rem 0 0.5rem 0;
-        font-size: 0.5rem;
-        color: rgb(200, 200, 200);
-        transition: color 0.15s ease-in-out;
-        cursor: default;
-    }
-    .container:hover{
-        color: rgb(120, 120, 120);
-        cursor: default;
-    }
-    a {
-        color: inherit;
-    }
-</style>

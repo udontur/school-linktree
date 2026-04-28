@@ -1,11 +1,11 @@
 [
     {
-        "name": "DSC Parent Portal",
-        "link": "https://dsc.edu.hk/parent-portal",
+        "name": "Parent Portal (New SIS Edsembli)",
+        "link": "https://sis.edsembli.com/WebAdmin/ON/Private/DSC/UI/Account/SignIn#",
         "icon": "portal.svg"
     },
     {
-        "name": "Edsembli Student / Parents",
+        "name": "Edsembli (Old)",
         "link": "https://connect.edsembli.com/ON/Private/DSC/DSCS/Portal/viewer/login/login.aspx?LoginType=P",
         "icon": "marks.svg"
     },
@@ -15,7 +15,7 @@
         "icon": "slides.svg"
     },
     {
-        "name": "Morning Announcment PA",
+        "name": "Morning Announcment Script",
         "link": "https://docs.google.com/document/d/1JPgEFRBeoy6O0K92ZlsYjjlwss87oc54syABdcbb9wk/edit?usp=sharing",
         "icon": "speak.svg"
     },

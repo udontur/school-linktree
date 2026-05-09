@@ -9,10 +9,6 @@
     --color-main: #da2034;
 }
 
-* {
-    transition: all 0.15s ease-in-out;
-}
-
 @font-face {
 	font-family: "Inter";
 	src: url("/fonts/Inter/Inter-Regular.woff2") format("woff2");

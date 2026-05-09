@@ -1,16 +1,20 @@
 ---
-// In Vercel, framework dependent
-let buildNumber = "UNKOWN";
-let envBuildNumber = import.meta.env.PUBLIC_VERCEL_GIT_COMMIT_SHA;
-if(import.meta.env.PROD){
-    buildNumber=envBuildNumber.slice(0, 7);
+let buildNumber = "NOT_PRODUCTION"
+let envBuildNumber=import.meta.env.CF_PAGES_COMMIT_SHA
+if(envBuildNumber!=undefined){
+    buildNumber=envBuildNumber.slice(0, 8)
 }
 ---
 <div class="flex justify-center">
     <div class="mt-12 mb-12 text-xs text-invis cursor-default hover:text-hover">
         Build
-        <a class="text-inherit underline decoration-solid" href={"https://github.com/udontur/school-linktree/tree/"+envBuildNumber}>{buildNumber}</a>
+        <a
+            class="underline decoration-solid"
+            href={"https://github.com/udontur/school-linktree/tree/"+envBuildNumber}
+        >
+            {buildNumber}</a
+        >
         made with passion by
-        <a href="https://hadrian.cc">Hadrian</a>.
+        <a href="https://hadrian.cc">Hadrian</a>
     </div>
 </div>
